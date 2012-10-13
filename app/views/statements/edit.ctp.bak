@@ -1,0 +1,21 @@
+<h1><b>tech</b>stars is...</h1>
+
+<?php
+echo $this->Form->create('Statement');
+echo $this->Form->input('body',
+                        array('label' => 'TechStars is...',
+                              'rows' => '1',
+                              'maxlength' => '100'));
+echo $this->Form->input('name',
+                        array('label' => 'What\'s your name?',
+                              'rows' => '1',
+                              'maxlength' => '50'));
+echo $this->Form->input('type',
+                        array('label' => 'Who Are You?',
+                              'type' => 'radio',
+                              'options' => array('Mentor','Founder','Associate','HackStar','Staff')));
+echo $this->Form->input('company',
+                        array('label' => 'If you\'re a TechStars founder, what\'s your company\'s name?',
+                              'maxlength' => '50'));
+echo $this->Form->end('Save Statement');
+?>
